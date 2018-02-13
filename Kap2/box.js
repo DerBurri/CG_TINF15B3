@@ -18,10 +18,10 @@ window.onload = function init(){
     //];
     
     var vertices = [0.5,  0.5, /* p2 */
-                    -0.5, 0.5, /* p1 */
+                    1.0, 0.5, /* p1 */
                     0.5,  -0.5]; /* p4 */
     
-    
+    /* 
     // Two triangles
     var vertices = new Float32Array([
         // Triangle 1 vertices:
@@ -47,7 +47,7 @@ window.onload = function init(){
         1.0, 1.0,  // Vertex B (x,y,z)
         1.0, -1.0,  // Vertex C (x,y,z)
     ]);
-
+    */
 
     // Configure WebGL
     gl.viewport( 0, 0, canvas.width, canvas.height );
