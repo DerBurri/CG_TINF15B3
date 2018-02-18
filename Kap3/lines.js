@@ -44,7 +44,5 @@ window.onload = function init(){
 
 function render() {
     gl.clear( gl.COLOR_BUFFER_BIT );
-    //gl.drawArrays( gl.TRIANGLES, 0, 6 );
-    //gl.drawArrays( gl.TRIANGLE_STRIP, 0, 6 );
-    gl.drawArrays( gl.TRIANGLE_FAN, 0, 6 );
+    gl.drawArrays( gl.LINES, 0, 6 );
 }

@@ -8,12 +8,8 @@ window.onload = function init(){
     if ( !gl ) { 
         alert( "WebGL isn't available" );
     }
-
-    var size = 0.5;
-    var anchorX = -0.5;
-    var anchorY = +0.5;
     
-    // Four Vertices
+    // Vertices
     var vertices = [
         -0.7,-0.1,0,
         -0.3,0.6,0,
@@ -44,7 +40,5 @@ window.onload = function init(){
 
 function render() {
     gl.clear( gl.COLOR_BUFFER_BIT );
-    //gl.drawArrays( gl.LINES, 0, 6 );
-    //gl.drawArrays( gl.LINE_STRIP, 0, 6 );
-    gl.drawArrays( gl.LINE_LOOP, 0, 6 );
+    gl.drawArrays( gl.TRIANGLE_STRIP, 0, 6 );
 }
