@@ -361,9 +361,13 @@ function drawScene(gl, programInfo, buffers, deltaTime) {
       modelViewMatrix);
   
   // CULLING
-  //gl.enable(gl.CULL_FACE);
+  gl.enable(gl.CULL_FACE);
   //gl.cullFace(gl.FRONT);
-  //gl.cullFace(gl.BACK);
+  gl.cullFace(gl.BACK);
+    
+  // 
+  // gl.frontFace(gl.CW);
+  // gl.frontFace(gl.CCW);
 
   {
     const vertexCount = 36;
