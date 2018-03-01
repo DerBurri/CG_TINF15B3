@@ -234,6 +234,7 @@ var InitDemo = function () {
     
     /*
     // Beispiel 2: 45 Grad in X-Achse und 45 Grad in der Y-Achse
+    var identityMatrix = new Float32Array(16);
 	mat4.identity(identityMatrix);
     angle = 45 * (Math.PI / 180);
     
@@ -301,4 +302,5 @@ var InitDemo = function () {
 		requestAnimationFrame(loop);
 	};
 	requestAnimationFrame(loop);
+    
 };
